@@ -1,0 +1,31 @@
+.block-learning > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.block-learning > div > div {
+  flex: 1 1 50%;
+  min-width: 0;
+}
+
+.block-learning > div > div picture {
+  display: block;
+  width: 100%;
+}
+
+.block-learning > div > div img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* stack on narrow viewports */
+@media (max-width: 600px) {
+  .block-learning > div {
+    flex-direction: column;
+  }
+}
